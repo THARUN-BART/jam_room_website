@@ -69,6 +69,9 @@ export const metadata: Metadata = {
       "Create a JAM ROOM, invite your friends, and enjoy a shared music listening experience. One Room. One Song. One Vibe.",
     images: ["/App_Ic.png"],
   },
+  verification: {
+    google: "roOr-Q_4b3cj7UZKFFeKu2qMneuQYU63a2yFFhqe0GI",
+  },
 };
 
 export default function RootLayout({
