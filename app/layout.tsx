@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jam-room-connect.vercel.app"),
+  metadataBase: new URL("https://joinjamroom.vercel.app"),
 
   title: "JAM ROOM — Listen to Music Together With Friends",
 
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    url: "https://jam-room-connect.vercel.app",
+    url: "https://joinjamroom.vercel.app",
     siteName: "JAM ROOM",
     title: "JAM ROOM — Listen to Music Together With Friends",
     description:
