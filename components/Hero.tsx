@@ -64,6 +64,7 @@ export default function Hero() {
               </button>
               <a
                 href={ANDROID_APP_LINK}
+                download="JAM_ROOM.apk"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full glass-strong px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10 active:scale-95"
               >
                 <AndroidIcon />

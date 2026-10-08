@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://jam-room-connect.vercel.app";
+  const baseUrl = "https://joinjamroom.vercel.app";
   return [
     {
       url: baseUrl,

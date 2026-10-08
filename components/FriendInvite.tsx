@@ -23,6 +23,7 @@ export default function FriendInvite() {
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
               <a
                 href={ANDROID_APP_LINK}
+                download="JAM_ROOM.apk"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-brand-gradient px-6 py-3 text-sm font-semibold text-white shadow-[var(--shadow-glow)] transition hover:scale-105 active:scale-95"
               >
                 <Download size={16} /> Get the App

@@ -13,12 +13,12 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://jam-room-connect.vercel.app/privacy",
+    canonical: "https://joinjamroom.vercel.app/privacy",
   },
   openGraph: {
     title: "Privacy Policy & Terms — JAM ROOM",
     description: "Privacy Policy, Terms of Service, and official disclaimers for JAM ROOM.",
-    url: "https://jam-room-connect.vercel.app/privacy",
+    url: "https://joinjamroom.vercel.app/privacy",
   },
 };
 

@@ -35,6 +35,7 @@ export default function DownloadCTA() {
               </p>
               <a
                 href={ANDROID_APP_LINK}
+                download="JAM_ROOM.apk"
                 className="mt-8 inline-flex items-center gap-3 rounded-full bg-brand-gradient px-6 py-4 sm:px-8 text-sm sm:text-base font-semibold text-white shadow-[var(--shadow-glow-strong)] transition hover:scale-[1.04] active:scale-95"
               >
                 <AndroidIcon /> Download JAM ROOM

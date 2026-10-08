@@ -18,8 +18,7 @@ import Footer from "../components/Footer";
 
 export const APP_NAME = "JAM ROOM";
 export const TAGLINE = "One Room. One Song. One Vibe.";
-export const ANDROID_APP_LINK =
-  "https://drive.google.com/file/d/1hucnPBQu0TvBf0OKDxe-Wfp7l2Os2NRZ/view?usp=drive_link";
+export const ANDROID_APP_LINK = "/jam-room.apk";
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true);
