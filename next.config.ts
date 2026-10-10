@@ -1,23 +1,9 @@
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  async headers() {
-    return [
-      {
-        source: "/jam-room.apk",
-        headers: [
-          {
-            key: "Content-Type",
-            value: "application/vnd.android.package-archive",
-          },
-          {
-            key: "Content-Disposition",
-            value: 'attachment; filename="JAM_ROOM.apk"',
-          },
-        ],
-      },
-    ];
-  },
+  /* config options here */
+  allowedDevOrigins: ["172.16.162.30"],
 };
 
 export default nextConfig;

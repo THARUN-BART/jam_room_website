@@ -16,6 +16,7 @@ export default function Footer() {
         { label: "Home", targetId: "home" },
         { label: "Jam Rooms", targetId: "jam-rooms" },
         { label: "Features", targetId: "features" },
+        { label: "Why JAM ROOM", targetId: "why" },
         { label: "How It Works", targetId: "how" },
         { label: "Download", targetId: "download" },
       ],

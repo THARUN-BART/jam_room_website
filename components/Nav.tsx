@@ -18,6 +18,7 @@ export default function Nav() {
     { targetId: "home", label: "Home" },
     { targetId: "jam-rooms", label: "Jam Rooms" },
     { targetId: "features", label: "Features" },
+    { targetId: "why", label: "Why JAM ROOM" },
     { targetId: "how", label: "How It Works" },
     { targetId: "download", label: "Download" },
   ];
@@ -38,32 +39,35 @@ export default function Nav() {
           : ""
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 md:px-8">
-        <button onClick={() => handleScroll("home")} className="shrink-0 bg-transparent border-0 cursor-pointer text-left">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 md:px-8">
+        <button
+          onClick={() => handleScroll("home")}
+          className="shrink-0 bg-transparent border-0 cursor-pointer text-left p-0 focus:outline-none"
+        >
           <Logo />
         </button>
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden lg:flex items-center gap-5 xl:gap-8">
           {links.map((l) => (
             <button
               key={l.targetId}
               onClick={() => handleScroll(l.targetId)}
-              className="text-sm font-medium text-muted-foreground transition hover:text-foreground bg-transparent border-0 cursor-pointer"
+              className="whitespace-nowrap text-sm font-medium text-muted-foreground transition hover:text-foreground hover:text-white bg-transparent border-0 cursor-pointer py-1 px-1 focus:outline-none"
             >
               {l.label}
             </button>
           ))}
         </nav>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3 shrink-0">
           <button
             onClick={() => handleScroll("download")}
-            className="hidden rounded-full bg-brand-gradient px-4 py-2 text-sm font-semibold text-white shadow-[var(--shadow-glow)] transition hover:scale-[1.03] active:scale-95 md:inline-flex border-0 cursor-pointer"
+            className="hidden sm:inline-flex whitespace-nowrap shrink-0 rounded-full bg-brand-gradient px-4 py-2 text-sm font-semibold text-white shadow-[var(--shadow-glow)] transition hover:scale-[1.03] active:scale-95 border-0 cursor-pointer"
           >
             Get JAM ROOM
           </button>
           <button
             onClick={() => setOpen((v) => !v)}
-            className="grid h-10 w-10 place-items-center rounded-lg glass md:hidden transition active:scale-95 border-0 cursor-pointer"
-            aria-label="Menu"
+            className="grid h-10 w-10 place-items-center rounded-lg glass lg:hidden transition active:scale-95 border-0 cursor-pointer focus:outline-none"
+            aria-label="Toggle menu"
           >
             <div className="space-y-1">
               <span className={`block h-0.5 w-5 bg-foreground transition-transform ${open ? "rotate-45 translate-y-1.5" : ""}`} />
@@ -74,20 +78,20 @@ export default function Nav() {
         </div>
       </div>
       {open && (
-        <div className="md:hidden mx-4 mb-3 rounded-2xl glass-strong p-4 animate-reveal">
-          <div className="flex flex-col gap-3">
+        <div className="lg:hidden mx-4 mb-3 rounded-2xl glass-strong p-4 animate-reveal border border-white/10">
+          <div className="flex flex-col gap-2">
             {links.map((l) => (
               <button
                 key={l.targetId}
                 onClick={() => handleScroll(l.targetId)}
-                className="text-left text-sm font-medium text-muted-foreground hover:text-foreground py-2 border-b border-white/5 last:border-0 bg-transparent border-0 cursor-pointer"
+                className="text-left text-sm font-medium text-muted-foreground hover:text-foreground py-2.5 px-3 rounded-lg hover:bg-white/5 border-b border-white/5 last:border-0 bg-transparent border-0 cursor-pointer transition"
               >
                 {l.label}
               </button>
             ))}
             <button
               onClick={() => handleScroll("download")}
-              className="mt-2 rounded-full bg-brand-gradient px-4 py-2 text-center text-sm font-semibold text-white shadow-md border-0 cursor-pointer"
+              className="mt-2 w-full rounded-full bg-brand-gradient px-4 py-2.5 text-center text-sm font-semibold text-white shadow-md border-0 cursor-pointer"
             >
               Get JAM ROOM
             </button>

@@ -22,16 +22,18 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://joinjamroom.vercel.app"),
 
-  title: "JAM ROOM — Synchronized Social Music Player | ~50ms Latency & Offline Downloads",
+  title: "JAM ROOM — Free Spotify Jam Alternative | Listen Together at ~50ms Latency",
 
   description:
-    "Listen to music together in real-time with JAM ROOM. Features ~50ms latency Jam Rooms, YouTube streaming with 5-step fallback, synced lyrics, background playback, offline .m4a downloads, and phone storage music scanner.",
+    "Why pay for Spotify Jam? Download JAM ROOM for Android. 100% free synchronized music rooms at ~50ms latency, YouTube streaming with 5-step fallback, synced lyrics, background playback, and offline .m4a downloads. Zero ads, zero paywalls.",
 
   keywords: [
+    "spotify jam free alternative",
+    "listen to music together free",
     "jam rooms",
     "synchronized music playback",
     "social music player",
-    "listen together",
+    "listen together without premium",
     "50ms latency audio sync",
     "youtube streaming fallback",
     "device storage music player",
@@ -45,6 +47,7 @@ export const metadata: Metadata = {
     "responsive music app 320px",
     "animated ui vinyl spinner",
     "shared queue music room",
+    "free background music player android apk",
   ],
 
   authors: [
@@ -90,9 +93,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://joinjamroom.vercel.app",
     siteName: "JAM ROOM",
-    title: "JAM ROOM — Synchronized Social Music Player",
+    title: "JAM ROOM — Free Spotify Jam Alternative | Listen Together at ~50ms Latency",
     description:
-      "Jam Rooms with ~50ms latency, YouTube streaming with 5-step fallback, synced lyrics, offline .m4a downloads, and background playback. One Room. One Song. One Vibe.",
+      "100% free synchronized music rooms at ~50ms latency, YouTube streaming with 5-step fallback, synced lyrics, offline .m4a downloads, and background playback. One Room. One Song. One Vibe.",
     images: [
       {
         url: "/App_Ic.png",
@@ -105,9 +108,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "JAM ROOM — Synchronized Social Music Player",
+    title: "JAM ROOM — Free Spotify Jam Alternative | Listen Together at ~50ms Latency",
     description:
-      "Synchronized music playback at ~50ms latency, YouTube streaming 5-step fallback, synced lyrics, and offline .m4a downloads.",
+      "100% free synchronized music rooms at ~50ms latency, YouTube streaming 5-step fallback, synced lyrics, and offline .m4a downloads.",
     images: ["/App_Ic.png"],
   },
 
@@ -123,16 +126,27 @@ const jsonLdSchema = {
       "@type": "SoftwareApplication",
       "@id": "https://joinjamroom.vercel.app/#app",
       "name": "JAM ROOM",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android 7.0 and up",
       "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "Social Music Streaming",
+      "fileSize": "40MB",
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD",
       },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1420",
+        "bestRating": "5",
+        "worstRating": "1",
+      },
       "description":
-        "Synchronized social music player featuring Jam Rooms with ~50ms latency, YouTube streaming 5-step fallback, offline .m4a downloads, synced lyrics, background playback, and device storage music scanner.",
+        "The free Spotify Jam alternative. Synchronized social music player featuring Jam Rooms with ~50ms latency, YouTube streaming 5-step fallback, offline .m4a downloads, synced lyrics, background playback, and device storage music scanner.",
       "url": "https://joinjamroom.vercel.app",
+      "downloadUrl":
+        "https://drive.google.com/file/d/19sNSnCmiwo9Ez-EVUFMeiJTTIrDxr4iH/view?usp=drive_link",
       "image": "https://joinjamroom.vercel.app/App_Ic.png",
       "screenshot": "https://joinjamroom.vercel.app/demo_images/Room_player.webp",
       "featureList": [

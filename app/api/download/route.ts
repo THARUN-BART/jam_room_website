@@ -1,7 +1,8 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
-export async function GET(request: NextRequest) {
-  // Direct redirect to the locally hosted APK file
-  const downloadUrl = new URL("/jam-room.apk", request.url);
-  return NextResponse.redirect(downloadUrl, 302);
+const DIRECT_DOWNLOAD_URL =
+  "https://drive.google.com/file/d/19sNSnCmiwo9Ez-EVUFMeiJTTIrDxr4iH/view?usp=drive_link";
+
+export async function GET() {
+  return NextResponse.redirect(DIRECT_DOWNLOAD_URL, 302);
 }

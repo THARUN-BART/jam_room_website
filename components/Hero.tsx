@@ -1,6 +1,6 @@
 "use client";
 
-import { Sparkles, Zap, Users, Music2 } from "lucide-react";
+import { Sparkles, Zap, Users, Music2, Check } from "lucide-react";
 import { Reveal, Avatar, AlbumArt, Equalizer, SoundWave, AndroidIcon } from "./shared";
 import { ANDROID_APP_LINK } from "../app/page";
 
@@ -26,50 +26,58 @@ export default function Hero() {
       <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 md:px-8 lg:grid-cols-2 lg:items-center">
         <div className="text-center lg:text-left">
           <Reveal>
-            <div className="inline-flex items-center gap-2 rounded-full glass px-3 py-1 text-xs text-muted-foreground">
+            <div className="inline-flex items-center gap-2 rounded-full glass px-3.5 py-1 text-xs text-muted-foreground border border-white/10 shadow-sm">
               <span className="grid h-2 w-2 place-items-center rounded-full bg-[var(--neon-3)]">
                 <span className="absolute h-2 w-2 rounded-full bg-[var(--neon-3)] animate-ping" />
               </span>
-              Social music, live now
+              <span>The Free Spotify Jam Alternative • Live Now</span>
             </div>
           </Reveal>
           <Reveal delay={100}>
-            <h1 className="mt-5 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
-              Don't Just Listen.
+            <h1 className="mt-5 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.08] tracking-tight text-white">
+              Stop Listening Alone.
               <br />
               <span className="text-gradient">Listen Together.</span>
             </h1>
           </Reveal>
           <Reveal delay={200}>
             <p className="mt-6 max-w-xl mx-auto lg:mx-0 text-base sm:text-lg text-muted-foreground leading-relaxed">
-              Create a JAM ROOM, invite your friends, and enjoy music together.
-              One room. One song. One vibe.
+              Create a free JAM ROOM with friends at{" "}
+              <span className="text-white font-semibold">~50ms ultra-low latency</span>. No
+              $12/month Spotify paywall. No ads. Just your crew, one room, and the music in perfect
+              real-time lockstep.
             </p>
           </Reveal>
           <Reveal delay={280}>
-            <div className="mt-4 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-xs sm:text-sm text-muted-foreground">
-              <Sparkles size={16} className="text-[var(--neon)]" />
-              Create Room <span className="opacity-40">•</span> Invite Friends{" "}
-              <span className="opacity-40">•</span> Listen Together
+            <div className="mt-4 flex flex-wrap items-center justify-center lg:justify-start gap-2.5 text-xs text-zinc-300">
+              <span className="inline-flex items-center gap-1 rounded-full bg-white/5 border border-white/10 px-2.5 py-1 font-semibold text-emerald-400">
+                <Check size={12} strokeWidth={3} /> 100% Free Forever
+              </span>
+              <span className="inline-flex items-center gap-1 rounded-full bg-white/5 border border-white/10 px-2.5 py-1 font-semibold text-[var(--neon-3)]">
+                <Sparkles size={12} /> Firebase Auth & Sync
+              </span>
+              <span className="inline-flex items-center gap-1 rounded-full bg-white/5 border border-white/10 px-2.5 py-1 font-semibold text-zinc-300">
+                <Zap size={12} /> ~50ms Real-Time Sync
+              </span>
             </div>
           </Reveal>
           <Reveal delay={360}>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <button
-                onClick={() => handleScroll("how")}
-                className="w-full sm:w-auto group relative inline-flex items-center justify-center gap-2 rounded-full bg-brand-gradient px-6 py-3.5 text-sm font-semibold text-white shadow-[var(--shadow-glow)] transition hover:scale-[1.04] active:scale-95 border-0 cursor-pointer"
-              >
-                <Zap size={18} />
-                Start the Vibe
-              </button>
               <a
                 href={ANDROID_APP_LINK}
-                download="JAM_ROOM.apk"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full glass-strong px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10 active:scale-95"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-brand-gradient px-7 py-4 text-sm font-semibold text-white shadow-[var(--shadow-glow-strong)] transition hover:scale-[1.04] active:scale-95"
               >
                 <AndroidIcon />
                 Download for Android
               </a>
+              <button
+                onClick={() => handleScroll("why")}
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full glass-strong px-6 py-4 text-sm font-semibold text-white transition hover:bg-white/10 active:scale-95 border border-white/10 cursor-pointer"
+              >
+                Why JAM ROOM?
+              </button>
             </div>
           </Reveal>
           <Reveal delay={480}>

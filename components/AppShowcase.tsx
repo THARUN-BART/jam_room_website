@@ -161,7 +161,8 @@ export default function AppShowcase() {
                   </button>
                   <a
                     href={ANDROID_APP_LINK}
-                    download="JAM_ROOM.apk"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-full glass px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10 active:scale-95"
                   >
                     <Download size={16} /> Get the App
