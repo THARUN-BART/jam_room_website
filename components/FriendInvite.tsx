@@ -51,7 +51,7 @@ export default function FriendInvite() {
                 </div>
                 <div className="mt-6 text-center">
                   <div className="text-[10px] uppercase tracking-widest text-muted-foreground font-semibold">
-                    You've been invited to
+                    You&apos;ve been invited to
                   </div>
                   <div className="mt-1 font-display text-xl font-bold text-white">
                     FRIDAY NIGHT VIBES

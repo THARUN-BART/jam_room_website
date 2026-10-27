@@ -14,7 +14,7 @@ import {
   Music2,
   ArrowRight,
 } from "lucide-react";
-import { Reveal, SectionHead, AndroidIcon } from "./shared";
+import { Reveal, SectionHead, AndroidIcon, GoogleIcon } from "./shared";
 import { ANDROID_APP_LINK } from "../app/page";
 
 interface ComparisonRow {
@@ -53,10 +53,11 @@ const COMPARISON_DATA: ComparisonRow[] = [
   },
   {
     feature: "Account & Authentication",
-    jamRoom: "Firebase Verified Sign-In",
-    jamRoomSub: "Fast, secure authentication & sync",
-    spotifyJam: "Requires Spotify account + paid Premium",
+    jamRoom: "1-Tap Google Sign-In",
+    jamRoomSub: "Firebase Google Authenticator • Instant Zero-Password Sync",
+    spotifyJam: "Requires Spotify account + $11.99/mo paid Premium",
     discord: "Requires Discord account & bot config",
+    highlight: true,
   },
   {
     feature: "Offline .m4a Downloads",
@@ -238,8 +239,8 @@ export default function Community() {
                   </h3>
                   <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
                     No more arguing over who connects to the Bluetooth speaker, and no more requiring
-                    everyone to pay $11.99/month for Spotify Premium. Anyone in the room can add tracks,
-                    reorder the queue, and vote on the playlist live.
+                    everyone to pay $11.99/month for Spotify Premium. With 1-tap Google Authenticator sign-in,
+                    anyone in the room can jump straight in, add tracks, reorder the queue, and vote on the playlist live.
                   </p>
                 </div>
                 <div className="mt-6 pt-4 border-t border-white/5 text-xs text-[var(--neon-3)] font-semibold flex items-center justify-between">
@@ -308,13 +309,14 @@ export default function Community() {
           <div className="mt-12 sm:mt-16 rounded-3xl glass p-6 sm:p-8 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6 bg-gradient-to-r from-white/[0.04] via-brand-soft/20 to-white/[0.04]">
             <div className="text-center sm:text-left">
               <div className="inline-flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-3 py-1 text-xs text-[var(--neon-3)] font-semibold mb-2">
-                <Sparkles size={13} /> Firebase Verified • Safe & Secure Download
+                <GoogleIcon size={13} />
+                <span>1-Tap Google Authenticator • Firebase Verified Safe</span>
               </div>
               <h4 className="font-display text-xl sm:text-2xl font-bold text-white">
                 Ready to start the vibe with your crew?
               </h4>
               <p className="mt-1 text-xs sm:text-sm text-muted-foreground">
-                Download the free 40MB Android APK via Google Drive. Install in seconds with Firebase secure auth.
+                Download the free 40MB Android APK (JamRoom v1.7.0). Sign in seamlessly with Google in one tap.
               </p>
             </div>
 

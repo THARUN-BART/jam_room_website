@@ -1,7 +1,7 @@
 "use client";
 
 import { Sparkles, Zap, Users, Music2, Check } from "lucide-react";
-import { Reveal, Avatar, AlbumArt, Equalizer, SoundWave, AndroidIcon } from "./shared";
+import { Reveal, Avatar, AlbumArt, Equalizer, SoundWave, AndroidIcon, GoogleIcon } from "./shared";
 import { ANDROID_APP_LINK } from "../app/page";
 
 export default function Hero() {
@@ -43,21 +43,25 @@ export default function Hero() {
           <Reveal delay={200}>
             <p className="mt-6 max-w-xl mx-auto lg:mx-0 text-base sm:text-lg text-muted-foreground leading-relaxed">
               Create a free JAM ROOM with friends at{" "}
-              <span className="text-white font-semibold">~50ms ultra-low latency</span>. No
-              $12/month Spotify paywall. No ads. Just your crew, one room, and the music in perfect
-              real-time lockstep.
+              <span className="text-white font-semibold">~50ms ultra-low latency</span>. Seamless{" "}
+              <span className="text-white font-semibold">1-tap Google login</span> via Firebase
+              Authenticator. No $12/month Spotify paywall. No ads. Just your crew, one room, and the
+              music in perfect real-time lockstep.
             </p>
           </Reveal>
           <Reveal delay={280}>
-            <div className="mt-4 flex flex-wrap items-center justify-center lg:justify-start gap-2.5 text-xs text-zinc-300">
-              <span className="inline-flex items-center gap-1 rounded-full bg-white/5 border border-white/10 px-2.5 py-1 font-semibold text-emerald-400">
+            <div className="mt-5 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-xs text-zinc-300">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-white/5 border border-white/10 px-3 py-1 font-semibold text-white">
+                <GoogleIcon size={13} /> 1-Tap Google Login
+              </span>
+              <span className="inline-flex items-center gap-1 rounded-full bg-white/5 border border-white/10 px-3 py-1 font-semibold text-emerald-400">
                 <Check size={12} strokeWidth={3} /> 100% Free Forever
               </span>
-              <span className="inline-flex items-center gap-1 rounded-full bg-white/5 border border-white/10 px-2.5 py-1 font-semibold text-[var(--neon-3)]">
-                <Sparkles size={12} /> Firebase Auth & Sync
+              <span className="inline-flex items-center gap-1 rounded-full bg-white/5 border border-white/10 px-3 py-1 font-semibold text-[#1DB954]">
+                <Sparkles size={12} /> Spotify & YouTube Sync
               </span>
-              <span className="inline-flex items-center gap-1 rounded-full bg-white/5 border border-white/10 px-2.5 py-1 font-semibold text-zinc-300">
-                <Zap size={12} /> ~50ms Real-Time Sync
+              <span className="inline-flex items-center gap-1 rounded-full bg-white/5 border border-white/10 px-3 py-1 font-semibold text-[var(--neon-3)]">
+                <Zap size={12} /> ~50ms Sync
               </span>
             </div>
           </Reveal>

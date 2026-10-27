@@ -1,8 +1,8 @@
 "use client";
 
 import { type ReactNode } from "react";
-import { PlusCircle, Users, Headphones, Copy, Share2 } from "lucide-react";
-import { Reveal, SectionHead, Equalizer, SoundWave, Avatar } from "./shared";
+import { PlusCircle, Users, Headphones, Copy, Share2, Check } from "lucide-react";
+import { Reveal, SectionHead, Equalizer, SoundWave, Avatar, GoogleIcon } from "./shared";
 
 export default function HowItWorks() {
   return (
@@ -35,18 +35,26 @@ export default function HowItWorks() {
           <Reveal>
             <StepCard
               step="01"
-              title="CREATE A ROOM"
+              title="1-TAP LOGIN & CREATE"
               icon={<PlusCircle size={22} />}
-              desc="Start your own JAM ROOM in seconds. Name your room and set the vibe."
+              desc="Sign in instantly with your Google account via Firebase Authenticator. Zero passwords, zero forms. Name your room and set the vibe."
             >
               <div className="glass rounded-2xl p-4">
-                <div className="text-[10px] uppercase tracking-widest text-muted-foreground font-semibold">
-                  Room Name
+                <div className="flex items-center justify-between text-[10px] uppercase tracking-widest text-muted-foreground font-semibold pb-2 border-b border-white/5">
+                  <span>Firebase Authenticator</span>
+                  <span className="text-emerald-400 font-bold flex items-center gap-1">
+                    <Check size={10} strokeWidth={3} /> Verified
+                  </span>
                 </div>
-                <div className="mt-2 rounded-lg bg-white/5 px-3 py-2 text-sm text-white select-none">
-                  Friday Night Vibes
+                <div className="mt-2.5 flex items-center gap-2 rounded-xl bg-white/10 px-3 py-2 text-xs text-white border border-white/10">
+                  <GoogleIcon size={14} />
+                  <span className="truncate font-medium">Continue with Google (1-Tap)</span>
                 </div>
-                <button className="mt-3 w-full rounded-lg bg-brand-gradient py-2.5 text-xs font-semibold text-white transition active:scale-95 shadow-sm">
+                <div className="mt-2 rounded-lg bg-white/5 px-3 py-1.5 text-xs text-zinc-300 flex items-center justify-between">
+                  <span className="truncate">Friday Night Vibes</span>
+                  <span className="text-[10px] text-muted-foreground uppercase">Room</span>
+                </div>
+                <button className="mt-2.5 w-full rounded-lg bg-brand-gradient py-2 text-xs font-semibold text-white transition active:scale-95 shadow-sm border-0 cursor-pointer">
                   CREATE ROOM
                 </button>
               </div>
@@ -65,7 +73,7 @@ export default function HowItWorks() {
                   Friday Night Vibes
                 </div>
                 <div className="mt-1 text-xs text-muted-foreground">
-                  You're invited to a JAM ROOM.
+                  You&apos;re invited to a JAM ROOM.
                 </div>
                 <div className="mt-3 grid grid-cols-2 gap-2">
                   <button className="inline-flex items-center justify-center gap-1 rounded-lg glass px-2 py-2.5 text-xs text-white transition active:scale-95">

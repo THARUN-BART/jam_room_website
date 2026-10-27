@@ -13,12 +13,11 @@ import {
   Search,
   Maximize2,
   Palette,
-  Disc,
   Sparkles,
   ArrowRight,
   ShieldCheck,
 } from "lucide-react";
-import { Reveal, SectionHead, Equalizer, Avatar } from "./shared";
+import { Reveal, SectionHead, Equalizer, Avatar, GoogleIcon } from "./shared";
 
 export default function Features() {
   return (
@@ -304,18 +303,59 @@ export default function Features() {
         </Reveal>
 
         {/* ============================================================ */}
-        {/* ROW 3: STORAGE, BACKGROUND & LIBRARY (4 Clean Sleek Cards)    */}
+        {/* ROW 3: BALANCED 6-CARD GRID (Symmetrical 3x2 UI/UX Layout)    */}
         {/* ============================================================ */}
-        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Card 4: Device Storage Music */}
+        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Card 4: Seamless Google Sign-In */}
           <Reveal delay={100}>
             <div
               itemProp="itemListElement"
               itemScope
               itemType="https://schema.org/ListItem"
-              className="glass rounded-3xl p-6 h-full flex flex-col justify-between border border-white/10 transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/5"
+              className="glass-strong rounded-3xl p-6 h-full flex flex-col justify-between border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.07] shadow-lg"
             >
               <meta itemProp="position" content="4" />
+              <meta itemProp="name" content="Seamless Google Sign-In" />
+              <meta
+                itemProp="description"
+                content="1-tap login with Google Authenticator via Firebase Auth with instant cloud profile sync"
+              />
+
+              <div>
+                <div className="flex items-center justify-between">
+                  <div className="grid h-10 w-10 place-items-center rounded-xl bg-white/10 text-white border border-white/10">
+                    <GoogleIcon size={20} />
+                  </div>
+                  <span className="inline-flex items-center gap-1 text-[10px] uppercase font-mono tracking-wider text-emerald-400 font-bold bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+                    <ShieldCheck size={11} /> 1-Tap Auth
+                  </span>
+                </div>
+
+                <h4 className="mt-4 font-display text-base font-bold text-white">
+                  Seamless Google Sign-In
+                </h4>
+
+                <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                  One-tap login with your Google account via Firebase Authenticator. Zero passwords, zero OTP delays, and instant profile sync across all devices.
+                </p>
+              </div>
+
+              <div className="mt-4 pt-3 border-t border-white/5 text-[11px] font-semibold text-emerald-400 flex items-center justify-between">
+                <span>Google Authenticator Verified</span>
+                <ArrowRight size={12} />
+              </div>
+            </div>
+          </Reveal>
+
+          {/* Card 5: Device Storage Music */}
+          <Reveal delay={150}>
+            <div
+              itemProp="itemListElement"
+              itemScope
+              itemType="https://schema.org/ListItem"
+              className="glass rounded-3xl p-6 h-full flex flex-col justify-between border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/5"
+            >
+              <meta itemProp="position" content="5" />
               <meta itemProp="name" content="Device Storage Music" />
               <meta
                 itemProp="description"
@@ -337,7 +377,7 @@ export default function Features() {
                 </h4>
 
                 <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                  Scan, search, and play local audio files directly from phone storage.
+                  Scan, search, and play local audio files directly from phone storage. Blend your phone&apos;s audio tracks into rooms effortlessly.
                 </p>
               </div>
 
@@ -348,15 +388,15 @@ export default function Features() {
             </div>
           </Reveal>
 
-          {/* Card 5: Background Playback */}
-          <Reveal delay={150}>
+          {/* Card 6: Background Playback */}
+          <Reveal delay={200}>
             <div
               itemProp="itemListElement"
               itemScope
               itemType="https://schema.org/ListItem"
-              className="glass rounded-3xl p-6 h-full flex flex-col justify-between border border-white/10 transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/5"
+              className="glass rounded-3xl p-6 h-full flex flex-col justify-between border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/5"
             >
-              <meta itemProp="position" content="5" />
+              <meta itemProp="position" content="6" />
               <meta itemProp="name" content="Background Playback" />
               <meta
                 itemProp="description"
@@ -378,30 +418,30 @@ export default function Features() {
                 </h4>
 
                 <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                  Lock screen controls, notification actions, survives app switches & kills.
+                  Lock screen controls, notification actions, survives app switches & kills with persistent foreground audio.
                 </p>
               </div>
 
               <div className="mt-4 pt-3 border-t border-white/5 text-[11px] font-semibold text-[var(--neon)] flex items-center justify-between">
-                <span>Foreground Audio</span>
+                <span>Foreground Audio Engine</span>
                 <ArrowRight size={12} />
               </div>
             </div>
           </Reveal>
 
-          {/* Card 6: Personal Library */}
-          <Reveal delay={200}>
+          {/* Card 7: Spotify & Playlist Hub */}
+          <Reveal delay={250}>
             <div
               itemProp="itemListElement"
               itemScope
               itemType="https://schema.org/ListItem"
-              className="glass rounded-3xl p-6 h-full flex flex-col justify-between border border-white/10 transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/5"
+              className="glass rounded-3xl p-6 h-full flex flex-col justify-between border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/5"
             >
-              <meta itemProp="position" content="6" />
-              <meta itemProp="name" content="Personal Library" />
+              <meta itemProp="position" content="7" />
+              <meta itemProp="name" content="Spotify & Playlist Hub" />
               <meta
                 itemProp="description"
-                content="Liked songs, playlists, downloads, and device audio in one place"
+                content="Import public Spotify and YouTube playlists with zero logins. Sync updates anytime with one tap."
               />
 
               <div>
@@ -409,36 +449,77 @@ export default function Features() {
                   <div className="grid h-10 w-10 place-items-center rounded-xl bg-brand-soft text-white">
                     <Library size={18} />
                   </div>
-                  <span className="text-[10px] uppercase font-mono tracking-wider text-muted-foreground">
-                    Library
+                  <span className="text-[10px] uppercase font-mono tracking-wider text-[#1DB954] font-semibold">
+                    Spotify & Cloud
                   </span>
                 </div>
 
                 <h4 className="mt-4 font-display text-base font-bold text-white">
-                  Personal Library
+                  Spotify & Playlist Hub
                 </h4>
 
                 <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                  Liked songs, playlists, downloads, and device audio in one place.
+                  Import public Spotify & YouTube playlists with zero logins. Sync track updates anytime with one tap.
                 </p>
               </div>
 
-              <div className="mt-4 pt-3 border-t border-white/5 text-[11px] font-semibold text-[var(--neon-2)] flex items-center justify-between">
-                <span>All-in-One Hub</span>
+              <div className="mt-4 pt-3 border-t border-white/5 text-[11px] font-semibold text-[#1DB954] flex items-center justify-between">
+                <span>Spotify Sync Engine</span>
                 <ArrowRight size={12} />
               </div>
             </div>
           </Reveal>
 
-          {/* Card 7: Library Search */}
-          <Reveal delay={250}>
+          {/* Card 8: Offline Downloads */}
+          <Reveal delay={300}>
             <div
               itemProp="itemListElement"
               itemScope
               itemType="https://schema.org/ListItem"
-              className="glass rounded-3xl p-6 h-full flex flex-col justify-between border border-white/10 transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/5"
+              className="glass rounded-3xl p-6 h-full flex flex-col justify-between border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/5"
             >
-              <meta itemProp="position" content="7" />
+              <meta itemProp="position" content="8" />
+              <meta itemProp="name" content="Offline Downloads" />
+              <meta
+                itemProp="description"
+                content=".m4a + metadata + album art — plays without network connectivity"
+              />
+
+              <div>
+                <div className="flex items-center justify-between">
+                  <div className="grid h-10 w-10 place-items-center rounded-xl bg-brand-soft text-white">
+                    <Download size={18} />
+                  </div>
+                  <span className="text-[10px] uppercase font-mono tracking-wider text-muted-foreground">
+                    Offline
+                  </span>
+                </div>
+
+                <h4 className="mt-4 font-display text-base font-bold text-white">
+                  Offline .m4a Downloads
+                </h4>
+
+                <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                  Download high-quality .m4a audio complete with metadata and album artwork. Enjoy music anywhere with zero data usage.
+                </p>
+              </div>
+
+              <div className="mt-4 pt-3 border-t border-white/5 text-[11px] font-semibold text-[var(--neon-3)] flex items-center justify-between">
+                <span>Offline .m4a + Art</span>
+                <ArrowRight size={12} />
+              </div>
+            </div>
+          </Reveal>
+
+          {/* Card 9: Library Search */}
+          <Reveal delay={350}>
+            <div
+              itemProp="itemListElement"
+              itemScope
+              itemType="https://schema.org/ListItem"
+              className="glass rounded-3xl p-6 h-full flex flex-col justify-between border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/5"
+            >
+              <meta itemProp="position" content="9" />
               <meta itemProp="name" content="Library Search" />
               <meta
                 itemProp="description"
@@ -456,11 +537,11 @@ export default function Features() {
                 </div>
 
                 <h4 className="mt-4 font-display text-base font-bold text-white">
-                  Library Search
+                  Instant Library Search
                 </h4>
 
                 <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                  Instant search across personal playlists, downloads, and device songs.
+                  Instant search across personal playlists, downloads, and device songs with zero lag.
                 </p>
               </div>
 

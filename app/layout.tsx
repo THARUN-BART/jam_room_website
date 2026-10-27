@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "social music player",
     "listen together without premium",
     "50ms latency audio sync",
+    "google authenticator login",
+    "seamless google sign in",
+    "firebase auth google music app",
     "youtube streaming fallback",
     "device storage music player",
     "blink-free cached artwork",
@@ -145,11 +148,13 @@ const jsonLdSchema = {
       "description":
         "The free Spotify Jam alternative. Synchronized social music player featuring Jam Rooms with ~50ms latency, YouTube streaming 5-step fallback, offline .m4a downloads, synced lyrics, background playback, and device storage music scanner.",
       "url": "https://joinjamroom.vercel.app",
+      "softwareVersion": "1.7.0",
       "downloadUrl":
-        "https://drive.google.com/file/d/19sNSnCmiwo9Ez-EVUFMeiJTTIrDxr4iH/view?usp=drive_link",
+        "https://sourceforge.net/projects/jamroom/files/JamRoomV1.7.0.apk/download",
       "image": "https://joinjamroom.vercel.app/App_Ic.png",
       "screenshot": "https://joinjamroom.vercel.app/demo_images/Room_player.webp",
       "featureList": [
+        "Seamless Google Sign-In: 1-tap login with Google Authenticator via Firebase Auth",
         "Jam Rooms: Synchronized playback across all devices at ~50ms latency",
         "YouTube Streaming: 5-step fallback chain — survives rate limits automatically",
         "Device Storage Music: Scan, search, and play local audio files directly from phone storage",

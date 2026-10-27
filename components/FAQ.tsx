@@ -11,6 +11,10 @@ export default function FAQ() {
       a: "JAM ROOM is a social music app that lets you create a music room, invite friends, and enjoy a synchronized shared listening experience.",
     },
     {
+      q: "How does login work? Do I need to create a new password?",
+      a: "No! JAM ROOM uses Google Authenticator with Firebase Authentication for seamless 1-tap sign-in. You don't need to create or remember new passwords or wait for OTP SMS messages. Simply tap 'Continue with Google', and your profile, favorites, and music rooms sync automatically.",
+    },
+    {
       q: "How does Jam Room synchronization achieve ~50ms latency?",
       a: "JAM ROOM uses high-precision timestamp sync and clock-drift correction across connected devices, ensuring everyone in the room hears the exact same beat in near-instant lockstep at ~50ms latency.",
     },
@@ -35,8 +39,8 @@ export default function FAQ() {
       a: "JAM ROOM uses an instant in-memory artwork cache that eliminates image flicker and reload flashes during UI re-renders and song transitions.",
     },
     {
-      q: "Can I import my YouTube Music playlist?",
-      a: "JAM ROOM can import supported playlist information and match available tracks when this functionality is enabled. Private, restricted, or unsupported playlists may not be available.",
+      q: "Can I import Spotify and YouTube playlists?",
+      a: "Yes! Paste any public Spotify or YouTube playlist link into JAM ROOM. The app parses the tracks without needing your Spotify account or login credentials, matches each song to high-quality audio streams, and saves it to your library. Even better, you can tap the green 'Sync with Spotify' button inside the playlist view anytime to pull newly added tracks automatically.",
     },
   ];
 

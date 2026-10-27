@@ -11,54 +11,96 @@ export default function AppShowcase() {
       title: "Splash Screen",
       subtitle: "Welcome to JAM ROOM",
       description:
-        "Start the vibe right away. An elegant, motion-accented entry into your social music space designed with modern dark mode principles.",
-      image: "/demo_images/Splash_screen.webp",
+        "Start the vibe right away. An elegant, motion-accented entry into your social music space with dark neon aesthetics.",
+      image: "/demo_images/splash_screen.webp",
     },
     {
-      title: "Discover Screen",
-      subtitle: "Your Music Feed",
+      title: "Onboarding Flow",
+      subtitle: "Spotify & YouTube Sync",
       description:
-        "Explore active rooms, live jams, and search for your favorite songs to add directly to the queue.",
+        "Explore core capabilities before jumping in: ~50ms ultra-low latency sync, 1-tap playlist import, and live karaoke lyrics.",
+      image: "/demo_images/landing_page.webp",
+    },
+    {
+      title: "1-Tap Google Login",
+      subtitle: "Seamless Firebase Auth",
+      description:
+        "Fast, secure authentication. Sign in with Google in one tap with zero passwords or registration forms.",
+      image: "/demo_images/login_screen.webp",
+    },
+    {
+      title: "Discover Home",
+      subtitle: "Your Social Music Hub",
+      description:
+        "Create or join rooms, access liked songs, offline downloads, stats, listening history, and your top artists.",
       image: "/demo_images/Home_screen.webp",
+    },
+    {
+      title: "Instant Search",
+      subtitle: "YouTube Music & Local Audio",
+      description:
+        "Lightning-fast search across online tracks, albums, YouTube streams, and local phone storage.",
+      image: "/demo_images/search_screen.webp",
     },
     {
       title: "Live Room Player",
       subtitle: "One Room. One Vibe.",
       description:
-        "See active listeners, control playback, and watch the background glow adjust dynamically to the current track's album art.",
+        "Host or join a room with room codes like OP1BTT. Stream in perfect sync with live chat and room permissions.",
       image: "/demo_images/Room_player.webp",
     },
     {
-      title: "Immersive Player",
-      subtitle: "Focus on the Sound",
+      title: "Shared Room Queue",
+      subtitle: "Collaborative Up Next",
       description:
-        "Get a detailed view of the track being played, complete with rich cover art representation and playback status indicators.",
-      image: "/demo_images/player.webp",
-    },
-    {
-      title: "Shared Queue",
-      subtitle: "Collaborative Playlists",
-      description:
-        "Add new tracks and view upcoming songs. Everyone in the room has a voice in shaping the playlist live.",
+        "Everyone in the room can add songs, reorder the queue, and vote on upcoming tracks live.",
       image: "/demo_images/Room_queue.webp",
     },
     {
-      title: "Live Lyrics",
-      subtitle: "Sing Along",
+      title: "Now Playing Player",
+      subtitle: "Vinyl Spinner & Neon Glow",
       description:
-        "Never miss a beat or a lyric. Synchronized lyrics update in real-time so the entire crew can sing along.",
-      image: "/demo_images/Lyric_sheet.webp",
+        "High-fidelity audio playback with interactive rotating vinyl disk, dynamic album art glow, and lock screen controls.",
+      image: "/demo_images/player.webp",
+    },
+    {
+      title: "Synced Lyrics",
+      subtitle: "Live Karaoke Line Tracking",
+      description:
+        "Never miss a beat or word. Synchronized lyrics update in real time with line-by-line interactive sing-along tracking.",
+      image: "/demo_images/lyric_sheet.webp",
+    },
+    {
+      title: "Personal Library",
+      subtitle: "Spotify & YouTube Import",
+      description:
+        "Organize liked songs, offline downloads, and import public Spotify/YouTube playlists with a single tap.",
+      image: "/demo_images/library_screen.webp",
     },
     {
       title: "Listening Stats",
-      subtitle: "Your Music Story",
+      subtitle: "Listening Insights",
       description:
-        "Track your jam sessions, favorite genres, top tracks, and check out your room's listening history.",
-      image: "/demo_images/Stats_screen.webp",
+        "Track total listening minutes, songs played, top artists, and favourite tracks across 1 week to 6 months.",
+      image: "/demo_images/stats_screen.webp",
+    },
+    {
+      title: "Listening History",
+      subtitle: "Recently Played",
+      description:
+        "Quickly access and replay recently streamed songs with one-tap Play All or Shuffle.",
+      image: "/demo_images/history_screen.webp",
+    },
+    {
+      title: "User Profile",
+      subtitle: "Account & Settings",
+      description:
+        "Manage your member profile, linked account details, and playback preferences securely.",
+      image: "/demo_images/profile_screen.webp",
     },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(1); // Default to Discover
+  const [activeIndex, setActiveIndex] = useState(3); // Default to Discover Home
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
@@ -181,7 +223,7 @@ export default function AppShowcase() {
                   <button
                     key={screen.title}
                     onClick={() => setActiveIndex(idx)}
-                    className={`px-3 py-1.5 sm:px-4 sm:py-2 text-xs font-semibold rounded-full border transition-all duration-300 shrink-0 ${
+                    className={`px-3 py-1.5 sm:px-4 sm:py-2 text-xs font-semibold rounded-full border transition-all duration-300 shrink-0 whitespace-nowrap ${
                       idx === activeIndex
                         ? "bg-white/10 border-white text-white shadow-md cursor-default"
                         : "border-white/10 bg-white/5 text-muted-foreground hover:bg-white/10 hover:border-white/20 hover:text-foreground cursor-pointer"

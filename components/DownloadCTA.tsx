@@ -1,7 +1,7 @@
 "use client";
 
 import { Download } from "lucide-react";
-import { Reveal, SoundWave, AndroidIcon } from "./shared";
+import { Reveal, SoundWave, AndroidIcon, GoogleIcon } from "./shared";
 import { ANDROID_APP_LINK } from "../app/page";
 
 export default function DownloadCTA() {
@@ -41,8 +41,13 @@ export default function DownloadCTA() {
               >
                 <AndroidIcon /> Download JAM ROOM
               </a>
-              <div className="mt-4 text-xs sm:text-sm text-muted-foreground font-medium">
-                Available for Android
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-xs text-zinc-300">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/5 border border-white/10 px-3 py-1 font-semibold text-white">
+                  <GoogleIcon size={12} /> 1-Tap Google Sign-In
+                </span>
+                <span className="inline-flex items-center gap-1 rounded-full bg-white/5 border border-white/10 px-3 py-1 font-semibold text-emerald-400">
+                  Safe Firebase Verified APK
+                </span>
               </div>
               <p className="mx-auto mt-6 max-w-2xl text-[10px] sm:text-xs text-muted-foreground leading-relaxed">
                 If the download link points to an APK file, Android may ask you
