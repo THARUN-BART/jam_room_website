@@ -148,9 +148,9 @@ const jsonLdSchema = {
       "description":
         "The free Spotify Jam alternative. Synchronized social music player featuring Jam Rooms with ~50ms latency, YouTube streaming 5-step fallback, offline .m4a downloads, synced lyrics, background playback, and device storage music scanner.",
       "url": "https://joinjamroom.vercel.app",
-      "softwareVersion": "1.7.0",
+      "softwareVersion": "1.8.0",
       "downloadUrl":
-        "https://sourceforge.net/projects/jamroom/files/JamRoomV1.7.0.apk/download",
+        "https://sourceforge.net/projects/jamroom/files/JamRoomV1.8.0.apk/download",
       "image": "https://joinjamroom.vercel.app/App_Ic.png",
       "screenshot": "https://joinjamroom.vercel.app/demo_images/Room_player.webp",
       "featureList": [

@@ -316,7 +316,7 @@ export default function Community() {
                 Ready to start the vibe with your crew?
               </h4>
               <p className="mt-1 text-xs sm:text-sm text-muted-foreground">
-                Download the free 40MB Android APK (JamRoom v1.7.0). Sign in seamlessly with Google in one tap.
+                Download the free 40MB Android APK (JamRoom v1.8.0). Sign in seamlessly with Google in one tap.
               </p>
             </div>
 
